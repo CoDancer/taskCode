@@ -331,7 +331,7 @@ int drawable abc_textfield_default_mtrl_alpha 0x7f02002f
 int drawable abc_textfield_search_activated_mtrl_alpha 0x7f020030
 int drawable abc_textfield_search_default_mtrl_alpha 0x7f020031
 int drawable abc_textfield_search_material 0x7f020032
-int drawable ic_launcher 0x7f020033
+int drawable unknown 0x7f020033
 int id action_bar 0x7f090033
 int id action_bar_activity_content 0x7f090003
 int id action_bar_container 0x7f090032
@@ -461,7 +461,17 @@ int string abc_searchview_description_voice 0x7f0a000a
 int string abc_shareactionprovider_share_with 0x7f0a000e
 int string abc_shareactionprovider_share_with_application 0x7f0a000d
 int string app_name 0x7f0a000f
+int string basic_info_cpu 0x7f0a0018
+int string basic_info_mem 0x7f0a0019
+int string detail_process_name 0x7f0a0011
 int string hello_world 0x7f0a0010
+int string info_detail 0x7f0a0013
+int string kill_all 0x7f0a0015
+int string kill_process 0x7f0a0014
+int string my_package 0x7f0a001a
+int string please_select 0x7f0a0012
+int string progress_tips_content 0x7f0a0017
+int string progress_tips_title 0x7f0a0016
 int style AppBaseTheme 0x7f0b00eb
 int style AppTheme 0x7f0b00ec
 int style Base_TextAppearance_AppCompat 0x7f0b0098

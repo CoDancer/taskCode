@@ -3,5 +3,18 @@
 
     <string name="app_name">taskControl</string>
     <string name="hello_world">Hello world!</string>
+    <string name="detail_process_name">进程名称</string>
+    
+    <string name="please_select">请选择</string>
+    <string name="info_detail">查看详情</string>
+    <string name="kill_process">强制结束</string>
+    <string name="kill_all">全部结束</string>
+    
+    <string name="progress_tips_title">提示</string>
+    <string name="progress_tips_content">正在刷新列表，请稍候...</string>
+    
+    <string name="basic_info_cpu">CPU:</string>
+    <string name="basic_info_mem">MEM:</string>
+    <string name="my_package">com.example.taskcontrol</string>
 
 </resources>

@@ -25,7 +25,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="fill_parent"
                 android:gravity="center_vertical"
-                android:text="进程名称"/>
+                android:text="@string/detail_process_name"/>
             <Button 
                 android:id="@+id/btn_kill_process"
                 android:layout_width="wrap_content"
