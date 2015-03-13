@@ -1624,7 +1624,8 @@ containing a value of this type.
         public static final int abc_textfield_search_activated_mtrl_alpha=0x7f020030;
         public static final int abc_textfield_search_default_mtrl_alpha=0x7f020031;
         public static final int abc_textfield_search_material=0x7f020032;
-        public static final int unknown=0x7f020033;
+        public static final int ic_launcher=0x7f020033;
+        public static final int unknown=0x7f020034;
     }
     public static final class id {
         public static final int action_bar=0x7f090033;
@@ -1822,17 +1823,26 @@ containing a value of this type.
          */
         public static final int abc_shareactionprovider_share_with_application=0x7f0a000d;
         public static final int app_name=0x7f0a000f;
-        public static final int basic_info_cpu=0x7f0a0018;
-        public static final int basic_info_mem=0x7f0a0019;
+        public static final int basic_info_cpu=0x7f0a001a;
+        public static final int basic_info_mem=0x7f0a001b;
+        public static final int detail_process_activity=0x7f0a0023;
+        public static final int detail_process_copyright=0x7f0a001d;
+        public static final int detail_process_data_dir=0x7f0a001f;
+        public static final int detail_process_install_dir=0x7f0a001e;
         public static final int detail_process_name=0x7f0a0011;
+        public static final int detail_process_package_size=0x7f0a0020;
+        public static final int detail_process_permission=0x7f0a0021;
+        public static final int detail_process_service=0x7f0a0022;
         public static final int hello_world=0x7f0a0010;
         public static final int info_detail=0x7f0a0013;
         public static final int kill_all=0x7f0a0015;
         public static final int kill_process=0x7f0a0014;
-        public static final int my_package=0x7f0a001a;
+        public static final int my_package=0x7f0a001c;
+        public static final int no_use=0x7f0a0019;
         public static final int please_select=0x7f0a0012;
         public static final int progress_tips_content=0x7f0a0017;
         public static final int progress_tips_title=0x7f0a0016;
+        public static final int unknown=0x7f0a0018;
     }
     public static final class style {
         /** 

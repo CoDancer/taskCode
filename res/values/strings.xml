@@ -7,14 +7,24 @@
     
     <string name="please_select">请选择</string>
     <string name="info_detail">查看详情</string>
-    <string name="kill_process">强制结束</string>
+    <string name="kill_process">结束全部</string>
     <string name="kill_all">全部结束</string>
     
     <string name="progress_tips_title">提示</string>
     <string name="progress_tips_content">正在刷新列表，请稍候...</string>
     
+    <string name="unknown">未知</string>
+    <string name="no_use">暂无</string>
+    
     <string name="basic_info_cpu">CPU:</string>
     <string name="basic_info_mem">MEM:</string>
     <string name="my_package">com.example.taskcontrol</string>
+    <string name="detail_process_copyright">版权的内容</string>
+    <string name="detail_process_install_dir">安装的目录</string>
+    <string name="detail_process_data_dir">目录数据</string>
+    <string name="detail_process_package_size">包的大小</string>
+    <string name="detail_process_permission">程序拥有的权限</string>
+    <string name="detail_process_service">程序包含的服务</string>
+    <string name="detail_process_activity">程序的Activity</string>
 
 </resources>

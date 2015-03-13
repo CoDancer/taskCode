@@ -59,6 +59,9 @@ public class DetailProgramUtil implements Serializable{
 	}
 
 	public String getProcessName() {
+		if (processName == null || processName.length() <= 0) {
+			processName = "null";
+		}
 		return processName;
 	}
 
@@ -91,6 +94,9 @@ public class DetailProgramUtil implements Serializable{
 	}
 
 	public String getDataDir() {
+		if (dataDir == null || dataDir.length() <= 0) {
+			dataDir = "null";
+		}
 		return dataDir;
 	}
 
@@ -99,6 +105,9 @@ public class DetailProgramUtil implements Serializable{
 	}
 
 	public String getSourceDir() {
+		if (sourceDir == null || sourceDir.length() <= 0) {
+			sourceDir = "null";
+		}
 		return sourceDir;
 	}
 
@@ -166,17 +175,53 @@ public class DetailProgramUtil implements Serializable{
 
 	public String Array2String(String[] array) {
 		// TODO Auto-generated method stub
-		return null;
+		String resultString = "";
+		if (array != null && array.length > 0) {
+			resultString = "";
+			for(int i = 0; i < array.length ;i++){
+				resultString += array[i];
+				if(i < (array.length - 1)){
+					resultString += "\n";
+				}
+			}
+		}
+		return resultString;
 	}
 	
 	private String Array2String(ActivityInfo[] array) {
 		// TODO Auto-generated method stub
-		return null;
+		String resultString = "";
+		if (array != null && array.length > 0) {
+			resultString = "";
+			for(int i = 0; i < array.length ;i++){
+				if (array[i].name == null ) {
+					continue;
+				}
+				resultString += array[i].name.toString();
+				if(i < (array.length - 1)){
+					resultString += "\n";
+				}
+			}
+		}
+		return resultString;
 	}
 	
-	private String Array2String(ServiceInfo[] service) {
+	private String Array2String(ServiceInfo[] array) {
 		// TODO Auto-generated method stub
-		return null;
+		String resultString = "";
+		if (array != null && array.length > 0) {
+			resultString = "";
+			for(int i = 0; i < array.length ;i++){
+				if (array[i].name == null ) {
+					continue;
+				}
+				resultString += array[i].name.toString();
+				if(i < (array.length - 1)){
+					resultString += "\n";
+				}
+			}
+		}
+		return resultString;
 	}
 	
 }

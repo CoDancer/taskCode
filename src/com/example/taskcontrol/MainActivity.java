@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+
+
 import android.R.id;
 import android.R.integer;
 import android.app.Activity;
@@ -20,7 +22,9 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.ApplicationInfo;
+import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
+import android.content.pm.PackageManager.NameNotFoundException;
 import android.graphics.drawable.Animatable;
 import android.media.tv.TvContract.Programs;
 import android.os.Bundle;
@@ -149,6 +153,7 @@ public class MainActivity extends ListActivity {
 
 		@Override
 		public void onClick(View v) {
+			updateProcessList();
 			
 
 		}
@@ -158,7 +163,13 @@ public class MainActivity extends ListActivity {
 		@Override
 		public void onClick(View v) {
 			// TODO Auto-generated method stub
-
+			int count = infoList.size();
+			ProgramUtil bpu = null;
+			for (int i = 0; i < count; i++) {
+				bpu = infoList.get(i);
+				closeOneProcess(bpu.getProcessName());
+			}
+		updateProcessList();
 		}
 	}
 
@@ -221,7 +232,38 @@ public class MainActivity extends ListActivity {
 	}
 
 	public DetailProgramUtil buildProgramUtilComplexInfo(String processName) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+
+    	DetailProgramUtil complexProgramUtil = new DetailProgramUtil();
+		ApplicationInfo tempAppInfo = packageUtil.getApplicationInfo(processName);
+		if (tempAppInfo == null) {
+			return null;
+		}
+		
+		PackageInfo tempPkgInfo = null;
+		try {
+			tempPkgInfo = packageManager.getPackageInfo(
+					tempAppInfo.packageName, 
+					PackageManager.GET_UNINSTALLED_PACKAGES | PackageManager.GET_ACTIVITIES
+					| PackageManager.GET_SERVICES | PackageManager.GET_PERMISSIONS);
+		} catch (NameNotFoundException e) {
+			e.printStackTrace();
+		}
+		if (tempPkgInfo == null) {
+			return null;
+		}
+		
+		complexProgramUtil.setProcessName(processName);
+		complexProgramUtil.setCompanyName(getString(R.string.no_use));
+		complexProgramUtil.setVersionName(tempPkgInfo.versionName);
+		complexProgramUtil.setVersionCode(tempPkgInfo.versionCode);
+		complexProgramUtil.setDataDir(tempAppInfo.dataDir);
+		complexProgramUtil.setSourceDir(tempAppInfo.sourceDir);
+		complexProgramUtil.setPackageName(tempPkgInfo.packageName);
+		
+		complexProgramUtil.setUserPermissions(tempPkgInfo.requestedPermissions);
+		complexProgramUtil.setService(tempPkgInfo.services);
+		complexProgramUtil.setActivities(tempPkgInfo.activities);
+		
+		return complexProgramUtil;
+    }
 }

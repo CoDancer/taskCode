@@ -35,7 +35,7 @@
         		android:paddingRight="10dip"
         		android:paddingTop="0dip"
         		android:paddingBottom="0dip"
-        		android:text="结束全部"
+        		android:text="@string/kill_process"
         		android:textColor="#cc0033"
         		android:textSize="5pt"/>
         </RelativeLayout>
@@ -47,7 +47,7 @@
             android:paddingBottom="3dip"/>
         
         <TextView 
-            android:text="版权的内容"
+            android:text="@string/detail_process_copyright"
             android:textSize="7pt"
             android:gravity="center_vertical"
             android:background="#555555"
@@ -63,7 +63,7 @@
             android:paddingBottom="3dip"/>
         
         <TextView 
-            android:text="安装的目录"
+            android:text="@string/detail_process_install_dir"
             android:textSize="7pt"
             android:gravity="center_vertical"
             android:background="#555555"
@@ -79,7 +79,7 @@
             android:paddingBottom="3dip"/>
         
         <TextView 
-            android:text="目录数据"
+            android:text="@string/detail_process_data_dir"
             android:textSize="7pt"
             android:gravity="center_vertical"
             android:background="#555555"
@@ -95,7 +95,7 @@
             android:paddingBottom="3dip"/>
         
         <TextView 
-            android:text="包的大小"
+            android:text="@string/detail_process_package_size"
             android:textSize="7pt"
             android:gravity="center_vertical"
             android:background="#555555"
@@ -111,7 +111,7 @@
             android:paddingBottom="3dip"/>
         
         <TextView 
-            android:text="程序拥有的权限"
+            android:text="@string/detail_process_permission"
             android:textSize="7pt"
             android:gravity="center_vertical"
             android:background="#555555"
@@ -127,7 +127,7 @@
             android:paddingBottom="3dip"/>
         
         <TextView 
-            android:text="程序包含的服务"
+            android:text="@string/detail_process_service"
             android:textSize="7pt"
             android:gravity="center_vertical"
             android:background="#555555"
@@ -143,7 +143,7 @@
             android:paddingBottom="3dip"/>
         
         <TextView 
-            android:text="程序的Activity"
+            android:text="@string/detail_process_activity"
             android:textSize="7pt"
             android:gravity="center_vertical"
             android:background="#555555"
