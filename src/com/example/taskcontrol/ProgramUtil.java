@@ -43,7 +43,7 @@ public class ProgramUtil {
 		this.processName = processName;
 	}
 	public void setIcon(Drawable loadIcon) {
-		this.icon = icon;	
+		this.icon = loadIcon;	
 	}
 	public void setProgramName(String programName) {
 		this.programName = programName;

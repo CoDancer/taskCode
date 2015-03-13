@@ -1826,6 +1826,7 @@ containing a value of this type.
         public static final int basic_info_cpu=0x7f0a001a;
         public static final int basic_info_mem=0x7f0a001b;
         public static final int detail_process_activity=0x7f0a0023;
+        public static final int detail_process_company=0x7f0a0024;
         public static final int detail_process_copyright=0x7f0a001d;
         public static final int detail_process_data_dir=0x7f0a001f;
         public static final int detail_process_install_dir=0x7f0a001e;
@@ -1833,6 +1834,7 @@ containing a value of this type.
         public static final int detail_process_package_size=0x7f0a0020;
         public static final int detail_process_permission=0x7f0a0021;
         public static final int detail_process_service=0x7f0a0022;
+        public static final int detail_process_version=0x7f0a0025;
         public static final int hello_world=0x7f0a0010;
         public static final int info_detail=0x7f0a0013;
         public static final int kill_all=0x7f0a0015;

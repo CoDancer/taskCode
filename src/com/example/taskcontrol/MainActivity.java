@@ -123,11 +123,11 @@ public class MainActivity extends ListActivity {
 		ApplicationInfo tempAppInfo = packageUtil.getApplicationInfo(processName); 
 		if (tempAppInfo != null) {
 			programUtil.setIcon(tempAppInfo.loadIcon(packageManager));
-			programUtil.setProcessName(tempAppInfo.loadLabel(packageManager).toString());
+			programUtil.setProgramName(tempAppInfo.loadLabel(packageManager).toString());
 		}
 		else {
 			programUtil.setIcon(getApplicationContext().getResources().getDrawable(R.drawable.unknown));
-			programUtil.setProcessName(processName);
+			programUtil.setProgramName(processName);
 		}
 		String str = getUsedMemory(pid);
 		programUtil.setMemString(str);

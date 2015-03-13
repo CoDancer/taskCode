@@ -26,5 +26,9 @@
     <string name="detail_process_permission">程序拥有的权限</string>
     <string name="detail_process_service">程序包含的服务</string>
     <string name="detail_process_activity">程序的Activity</string>
+    
+    <string name="detail_process_company">公司:</string>
+    <string name="detail_process_version">版本:</string>
+    
 
 </resources>
